@@ -1,0 +1,140 @@
+/*
+Theme Name: The Trek Guy Theme
+Theme URI: http://megh.tk/wordpress-themes/thetrekguytheme
+Author: Meghashyam Bhandary
+Author URI: http://megh.tk/
+Description: Theme designed for the website The Trek Guy
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, bootstrap, light, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready 
+Text Domain: thetrekguy
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+body {
+    font-family: 'Bree Serif', serif;
+}
+
+nav {
+    background-color: #525252;
+    background: rgba(100, 100, 100, 0.8);
+    height: 100px;
+}
+
+nav a {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.navbar-header h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar ul {
+    margin-top: 30px;
+}
+
+.navbar li a {
+    padding: 10px;
+}
+
+.navbar li a:hover,
+a:focus {
+    background: none;
+    color: #FFF;
+}
+
+.navbar li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar li a:hover:before,
+a:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.icon-bar {
+    background-color: #FFF;
+}
+
+.s-single-share img {
+    width: auto;
+}
+
+.socializer span {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: #FFF;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.footer-text {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    /* firefox bug fix */
+}
+
+.navbar-brand>img {
+    height: 110px;
+    /* firefox bug fix */
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        background: rgba(100, 100, 100, 0.8);
+        height: auto;
+        margin-top: 50px;
+    }
+}
+
+.go-top>a>img {
+    width: 50px;
+    margin-top: -100px;
+}
+
+.parallax {
+    /* Set a specific height */
+    min-height: 450px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-text {
+    color: #FFF;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.cover-text h1 {
+    font-size: 40px;
+}
+
+.at300b {
+    float: none!important;
+}

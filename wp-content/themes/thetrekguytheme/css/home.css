@@ -1,0 +1,218 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+
+/* Padding below the footer and lighter body text */
+
+body {
+    color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+
+/* Since positioning the image, we need to help out the caption */
+
+
+/* Declare heights because of positioning of img element */
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+}
+
+.blog-container .post {
+    transition: opacity 0.5s;
+}
+
+.blog-container .post:hover {
+    opacity: 1!important;
+}
+
+.blog-text {
+    color: #000;
+    margin-left: 10px;
+    text-shadow: 1px 1px 10px #FFF;
+}
+
+span.cr {
+    font-style: italic;
+    color: #999;
+}
+
+.zoom-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom-image img {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.post:hover .zoom-image img {
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
+    /* IE8 */
+    filter: progid: DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
+    /* IE6 and 7 */
+}
+
+.divliner {
+    height: 5px;
+    background: #34c796;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.divliner h2 {
+    display: inline;
+    line-height: 0px;
+    padding: 20px;
+    background: #FFF;
+}
+
+.bg-dark,
+.bg-dark .divliner h2 {
+    background: #1b1b1b;
+    color: #FFF;
+}
+
+.bg-dark .divliner {
+    background: #FFF;
+}
+
+.package-info img {
+    height: 300px;
+    max-width: 100%;
+}
+
+.package-info {
+    padding: 10px;
+}
+
+.buttons {
+    padding: 20px;
+}
+
+.buttons a {
+    background: #579bab;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.buttons a:hover,
+.buttons a:focus {
+    box-shadow: 1px 1px 10px #999;
+    text-decoration: none;
+}
+
+.hider{
+    position: relative;
+    z-index: 1000;
+    height: 100px;
+    background: #fff;
+    margin-top: -100px;
+}
+@media screen and (max-width:540px){
+    .hider{
+        margin-top:-150px;
+    }
+}
